@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col {
+  width: 25%;
+  margin: 15px 0;
+}
+.col-card {
+  padding: 10px;
+  box-shadow: 0px 0px 2px gray;
+}
+img {
+  width: 100%;
+}
+.col-card h2 {
+  font-size: 17px;
+}
+.inner-row {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 15px;
+}
+h4 {
+  color: #000000ba;
+  font-size: 14px;
+}
+.icon-div-red {
+  display: flex;
+  border: 1px solid;
+  color: #fff;
+  background-color: red;
+  padding: 2px 5px;
+  gap: 7px;
+  font-size: 12px;
+}
+.icon-div-green {
+  display: flex;
+  border: 1px solid;
+  color: #fff;
+  background-color: green;
+  padding: 2px 5px;
+  gap: 7px;
+  font-size: 12px;
+}
+.icon-div-orange {
+  display: flex;
+  border: 1px solid;
+  color: #fff;
+  background-color: orange;
+  padding: 2px 5px;
+  gap: 7px;
+  font-size: 12px;
+}
+.cusine-para {
+  font-size: small;
+}
+.qnty-sec{
+    cursor:pointer;
+    display: flex;
+    gap: 10px;
+}
+
+/* nav section */
+.nav-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.navS{
+    width: 50%; 
+}
+.nav-l{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nav-img-div{
+    height: 60px;
+    width: 60px;
+}
+.nav-l img{
+    width: 100%;
+}
+.nav-l label{
+    font-size: 18px;
+    font-weight: 800;
+    border-bottom: 2px solid;
+}
+.nav-l input{
+    border: none;
+    outline: none;
+}
+.nav-r{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-r i{
+    padding-right: 6px;
+}
+.nav-r a{
+    text-decoration: none;
+    color: #000000bd;
+    font-size: 18px;
+    font-weight: 900;
+}
+.nav-r a:hover{
+    color:orange;
+}
+/* image cards */
+.img-sec{
+    background-color: rgb(23, 26, 41);
+    margin: 30px 0;
+    padding: 40px 0;
+}
+.imgCards{
+    display: flex;
+    gap:30px;
+    justify-content: center;
+}
+.imgCards img{
+    height: 235px;
+    width: 235px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+.imgCards img:hover{
+    transform: scale(1.1);
+}
+
+.res-sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#buttons button{
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #f0ffff00;
+}

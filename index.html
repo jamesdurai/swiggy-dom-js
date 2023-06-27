@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiggy App</title>
+
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Pinyon+Script&family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
+
+
+    
+  </head>
+  <body>
+    <div class="container">
+     
+      <div class="nav-head">
+        <div class="nav-l navS">
+          <div class="nav-img-div">
+            <img src="https://cdn.dribbble.com/users/2102703/screenshots/13943094/untitled-6_4x.jpg" alt="swiggy">
+          </div>
+          <div>
+            <label for="name">Other</label>
+            <input type="text" id="name" placeholder="Enter Your Location">
+          </div>
+           
+        </div>
+        <div class="nav-r navS">
+            <a href="#"><i class="bi bi-search"></i> Search</a>
+            <a href="#"><i class="bi bi-percent"></i> Offer</a>
+            <a href="#"><i class="bi bi-patch-question"></i> Help</a>
+            <a href="#"><i class="bi bi-person"></i> SignIn</a>
+            <a href="#"><i class="bi bi-cart"></i> Cart</a>
+        </div>
+      </div>
+
+      
+      <section class="img-sec">
+        <div class="container">
+            <div class="imgCards">
+              <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/nhubtkw7dukg3ukcmpam">
+              <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/s5ug2key6e2sptaxku5v">
+              <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/oxe97jexxbnxqtbhg2zo">
+              <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/ifi2lbzxeu1hvsqrsip3">
+          </div>
+        </div>
+      </section>
+      
+      
+      <section>
+        <div class="container">
+          <div class="res-sec">
+            <h1>1090 Restaurants</h1>
+            <div id="buttons">
+              <button onclick="defaultSorter()">Revelance</button>
+              <button onclick="sortRatings()">Rating</button>
+              <button onclick="sortPrice()">Price : Low to High</button>
+              <button onclick="filterCusine()">South Indian Foods</button>
+              <button onclick="sortTime()">Delivery Time</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      
+    </div>
+
+
+
+
+    
+	<script src="./main.js"></script>
+   
+    
+  </body>
+</html>
