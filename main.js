@@ -224,6 +224,8 @@ function itemRenderer(inpObj) {
     atag.innerText = e.ratings;
     icondiv.appendChild(atag);
 
+    
+
     ratings();
     function ratings() {
       if (e.ratings >= 4.0) {
@@ -231,10 +233,10 @@ function itemRenderer(inpObj) {
         
       } else if (e.ratings >= 2.5 && e.ratings <= 3.9) {
         icondiv.classList.add("icon-div-orange");
-       
+        
       } else if (e.ratings <= 2.4) {
         icondiv.classList.add("icon-div-red");
-        
+       
       }
     }
 
@@ -246,28 +248,17 @@ function itemRenderer(inpObj) {
     innerhead2.innerText ="Rs."+ e.amount+" "+e.units;
     innerdiv.appendChild(innerhead2);
 
+    
+    let orderBtn=document.createElement("a");
+    orderBtn.setAttribute("href","index2.html");
+    orderBtn.classList.add("orderButton");
+    orderBtn.innerHTML="Order Here";
+    div2.appendChild(orderBtn);
 
-
-    let incDiv = document.createElement("p");
-    incDiv.classList.add("qnty-sec")
-    div2.appendChild(incDiv);
-
-    let decreDiv = document.createElement("span");
-    decreDiv.innerHTML = "-";
-    decreDiv.setAttribute("onclick", "sub(this)");
-    incDiv.appendChild(decreDiv);
-
-    let zeroDiv = document.createElement("span");
-    zeroDiv.classList.add("leastVal");
-    zeroDiv.innerHTML = "0";
-    incDiv.appendChild(zeroDiv);
-
-    let increDiv = document.createElement("span");
-    increDiv.innerHTML = "+";
-    increDiv.setAttribute("onclick", "add(this)");
-    incDiv.appendChild(increDiv);
+    
   });
 }
+
 
 
 function sortTime() {
@@ -281,6 +272,7 @@ function sortTime() {
   itemRenderer(sortTimeObj);
 }
 
+
 function defaultSorter() {
   let colsRemove = document.querySelectorAll(".col");
   colsRemove.forEach((e) => {
@@ -288,6 +280,7 @@ function defaultSorter() {
   });
   itemRenderer(food);
 }
+
 
 
 function sortRatings() {
@@ -314,31 +307,22 @@ function filterCusine() {
   console.log(filterCusineObj);
 }
 
-function add(e) {
-  e.parentElement.childNodes.forEach(function (cv) {
-  if(cv.classList.contains('leastVal')){
-    var a = parseInt(cv.innerHTML)
-    cv.innerHTML=++a
-      }
-    })
-}
 
-function sub(e) {
-  e.parentElement.childNodes.forEach(function (cv) {
-  if(cv.classList.contains('leastVal')){
-    var a = parseInt(cv.innerHTML)
-   if(a>0){
-      cv.innerHTML=--a
-    }
-      }
-      
-    })
-    
-}
-
-function sortPrice() {
+function sortPriceLow() {
   let sortPriceObj = food.slice().sort(function (a, b) {
     return a.amount - b.amount;
+  });
+  let colsRemove = document.querySelectorAll(".col");
+  colsRemove.forEach((e) => {
+    e.remove();
+  });
+  itemRenderer(sortPriceObj);
+}
+
+
+function sortPriceHigh() {
+  let sortPriceObj = food.slice().sort(function (a, b) {
+    return b.amount - a.amount;
   });
   let colsRemove = document.querySelectorAll(".col");
   colsRemove.forEach((e) => {

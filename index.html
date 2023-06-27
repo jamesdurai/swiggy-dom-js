@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Swiggy App</title>
+    <title>Swiggy-Order Here !</title>
 
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -40,23 +40,24 @@
       <section class="img-sec">
         <div class="container">
             <div class="imgCards">
+              <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/lzkjv3sxwwjkzg0vxpvt">
+              <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/tgnvusbs3fnzz7xupeno">
               <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/nhubtkw7dukg3ukcmpam">
               <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/s5ug2key6e2sptaxku5v">
-              <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/oxe97jexxbnxqtbhg2zo">
-              <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/ifi2lbzxeu1hvsqrsip3">
           </div>
         </div>
       </section>
       
-      
+     
       <section>
         <div class="container">
           <div class="res-sec">
-            <h1>1090 Restaurants</h1>
+            <h1>1324 Restaurants</h1>
             <div id="buttons">
               <button onclick="defaultSorter()">Revelance</button>
               <button onclick="sortRatings()">Rating</button>
-              <button onclick="sortPrice()">Price : Low to High</button>
+              <button onclick="sortPriceLow()">Price : Low to High</button>
+              <button onclick="sortPriceHigh()">Price : High to Low</button>
               <button onclick="filterCusine()">South Indian Foods</button>
               <button onclick="sortTime()">Delivery Time</button>
             </div>
@@ -73,6 +74,8 @@
 
     
 	<script src="./main.js"></script>
+	
+
    
     
   </body>
